@@ -29,47 +29,49 @@
             }
 
             .column {
+              flex-direction:column;
               flex: 1;
-              display: flex;
+              /* display: flex; */
               justify-content: center;
               /* align-items: center; */
               position: relative;
             }
             .column3 {
-              flex: 1;
-              display: flex;
               justify-content: left;
-              /* align-items: center; */
-              position: relative;
             }
-
+            .header-link {  margin-top: 42%;
+              margin-left: 30%;}
+            .header-link-art {
+              margin-left: 0%;
+            }
+            .header-link-about-us {
+              margin-left: 0%;
+              margin-right: 20%
+            }
+            .mobile-view-header-links {
+              display: none;
+            }
             .window {
               /* background: #fff; */
               /* height: calc(34vw); */
               color:white;
               /* border: 1px solid #000; */
               overflow: auto; /* Enable the scrollbar */
+              width: 63%;
+              top: 50px;
+              padding: 20px;
             }
             .window1 {
-              width: 55%;
-              top: 50px;
-              margin-top: 68%;
+              margin-top: 19%;
               margin-left: 30%;
-              padding: 20px;
             }
             .window2 {
-              width: 55%;
-              top: 50px;
-              margin-top: 68%;
-              margin-left: 2%;
-              padding: 20px;
+              margin-top:19%;
+              margin-left: 16%;
             }
             .window3 {
-              width: 55%;
-              top: 50px;
-              margin-top: 110%;
+              margin-top: 60%;
               margin-left: 5%;
-              padding: 20px;
               color:red;
 
             }
@@ -85,8 +87,9 @@
                 flex-direction: column;
                 /* height: 950px; */
               }
+
               .window {
-                height: calc(96vw);
+                height: calc(97vw);
               }
               .column {
                 padding-bottom: 22%;
@@ -94,16 +97,33 @@
               .window1 {
               width: 55%;
               top: 50px;
-              margin-top: 55%;
-              margin-left: 0%;
+              margin-top: 18%;
+              margin-left: 21%;
               padding: 10px;
 
             }
-              .window2 {
+            .header-link {
+              display:none;
+            }
+            .mobile-view-header-links {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-top: 35%;
+              padding: 0 12%;
+            }
+            .column2 {
+                display:none;
+              }
+
+            .column3 {
+              display:none;
+              }
+            .window2 {
                 display: none;
 
               }
-              .window3 {
+            .window3 {
                 display: none;
 
               }
@@ -143,7 +163,11 @@
   </head>
   <body>
     <div class="building-container">
+      <div class="mobile-view-header-links">
+        <a>Fashion</a><a>Art</a><a>About us</a>
+      </div>
       <div class="column column1">
+        <div class="header-link header-link-fashion"><snap>Fashion</snap></div>
         <div class="window window1">
           <div class="window-content">
             <!-- Add your content for the first window here -->
@@ -174,6 +198,7 @@
         </div>
       </div>
       <div class="column column2">
+        <div class="header-link header-link-art"><snap>Art</snap></div>
         <div class="window window2">
           <div class="window-content">
             <!-- Add your content for the first window here -->
@@ -203,7 +228,11 @@
           </div>
         </div>
       </div>
-      <div class="column3">
+      <div class="column column3">
+        <div class="header-link header-link-about-us">
+          <snap>About us</snap>
+        </div>
+
         <div class="window window3">
           <div class="window-content">
             <!-- Add your content for the third window here -->
