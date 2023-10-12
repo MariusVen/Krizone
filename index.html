@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Building Website</title>
+    <style>
+            body {
+              text-align: center;
+              align-items: center;
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 1352px;
+              font-family: "Roboto", sans-serif;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              background-color: #DAD1BF;
+            }
+
+            .building-container {
+              background-image: url("building.jpg"); /* Add your building image URL here */
+              background-size: 100%; /* Adjust the background size property */
+              background-repeat: no-repeat; /* Prevent the image from repeating */
+              /* width: 100%; */
+              max-width: 1352px;
+              height: 950px;
+              position: relative;
+              overflow: hidden;
+              display: flex;
+            }
+
+            .column {
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              /* align-items: center; */
+              position: relative;
+            }
+            .column3 {
+              flex: 1;
+              display: flex;
+              justify-content: left;
+              /* align-items: center; */
+              position: relative;
+            }
+
+            .window {
+              /* background: #fff; */
+              /* height: calc(34vw); */
+              color:white;
+              /* border: 1px solid #000; */
+              overflow: auto; /* Enable the scrollbar */
+            }
+            .window1 {
+              width: 55%;
+              top: 50px;
+              margin-top: 68%;
+              margin-left: 30%;
+              padding: 20px;
+            }
+            .window2 {
+              width: 55%;
+              top: 50px;
+              margin-top: 68%;
+              margin-left: 2%;
+              padding: 20px;
+            }
+            .window3 {
+              width: 55%;
+              top: 50px;
+              margin-top: 110%;
+              margin-left: 5%;
+              padding: 20px;
+              color:red;
+
+            }
+
+            .window-content {
+              /* Add your content here */
+            }
+            @media screen and (max-width: 900px) {
+              .building-container {
+                background-image: url("building_mobile.svg"); /* Add your building image URL here */
+
+
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              .window {
+                height: calc(34vw);
+              }
+            }
+            @media screen and (min-width: 1400px) {
+              .window {
+                height: 50%;
+              }
+            }
+            ::-webkit-scrollbar {
+              width: 12px; /* Adjust the width as needed */
+              height: 5px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+              background: #888; /* Color of the scrollbar thumb */
+              border-radius: 6px; /* Rounded corners for the thumb */
+              height: -10%; /
+            }
+
+            ::-webkit-scrollbar-track {
+              display: none; /* Hide the scrollbar track */
+            }
+            .window-image {
+          width: 80%;
+          /* height: 200px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="building-container">
+      <div class="column">
+        <div class="window window1">
+          <div class="window-content">
+            <!-- Add your content for the first window here -->
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+            <p>
+              Your text content for Window 1 goes here.Your text content for
+              Window 1 goes here.Your text content for Window 1 goes here.
+            </p>
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+            <p>
+              Your text content for Window 1 goes here.Your text content for
+              Window 1 goes here.Your text content for Window 1 goes here.
+            </p>
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="window window2">
+          <div class="window-content">
+            <!-- Add your content for the first window here -->
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+            <p>
+              Your text content for Window 1 goes here.Your text content for
+              Window 1 goes here.Your text content for Window 1 goes here.
+            </p>
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+            <p>
+              Your text content for Window 1 goes here.Your text content for
+              Window 1 goes here.Your text content for Window 1 goes here.
+            </p>
+            <img
+              class="window-image"
+              src="art.jpg"
+              alt="Description of the image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="column3">
+        <div class="window window3">
+          <div class="window-content">
+            <!-- Add your content for the third window here -->
+
+            <p>Join our Krizone</p>
+            <p>>>></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
