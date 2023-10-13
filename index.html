@@ -4,170 +4,225 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Building Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
-            body {
-              text-align: center;
-              align-items: center;
-              margin-left: auto;
-              margin-right: auto;
-              max-width: 1352px;
-              font-family: "Roboto", sans-serif;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              background-color: #DAD1BF;
-            }
+      body {
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1352px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #dad1bf;
+      }
+      p {
+        font-family: Courier;
+      }
 
-            .building-container {
-              background-image: url("building.jpg"); /* Add your building image URL here */
-              background-size: 100%; /* Adjust the background size property */
-              background-repeat: no-repeat; /* Prevent the image from repeating */
-              /* width: 100%; */
-              /* max-width: 1352px; */
-              position: relative;
-              overflow: hidden;
-              display: flex;
-            }
+      .building-container {
+        background-image: url("building.jpg"); /* Add your building image URL here */
+        background-size: 100%; /* Adjust the background size property */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        /* width: 100%; */
+        /* max-width: 1352px; */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+      }
 
-            .column {
-              flex-direction:column;
-              flex: 1;
-              /* display: flex; */
-              justify-content: center;
-              /* align-items: center; */
-              position: relative;
-            }
-            .column3 {
-              justify-content: left;
-            }
-            .header-link {  margin-top: 42%;
-              margin-left: 30%;}
-            .header-link-art {
-              margin-left: 0%;
-            }
-            .header-link-about-us {
-              margin-left: 0%;
-              margin-right: 20%
-            }
-            .mobile-view-header-links {
-              display: none;
-            }
-            .window {
-              /* background: #fff; */
-              /* height: calc(34vw); */
-              color:white;
-              /* border: 1px solid #000; */
-              overflow: auto; /* Enable the scrollbar */
-              width: 63%;
-              top: 50px;
-              padding: 20px;
-            }
-            .window1 {
-              margin-top: 19%;
-              margin-left: 30%;
-            }
-            .window2 {
-              margin-top:19%;
-              margin-left: 16%;
-            }
-            .window3 {
-              margin-top: 60%;
-              margin-left: 5%;
-              color:red;
+      .column {
+        flex-direction: column;
+        flex: 1;
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+        position: relative;
+      }
+      .column3 {
+        justify-content: left;
+      }
+      .header-link {
+        margin-top: 43%;
+        margin-left: 30%;
+      }
+      .header-link-art {
+        margin-left: 0%;
+        margin-top: 10%;
+      }
+      .header-link-about-us {
+        margin-left: 0%;
+        margin-right: 20%;
+      }
+      .mobile-view-header-links {
+        display: none;
+      }
+      .window {
+        /* background: #fff; */
+        /* height: calc(34vw); */
+        color: white;
+        /* border: 1px solid #000; */
+        overflow: auto; /* Enable the scrollbar */
+        width: 63%;
+        top: 50px;
+        padding: 20px;
+      }
+      /* .window p {
+        text-align: justify;
+      } */
+      .window1 {
+        margin-top: 19%;
+        margin-left: 30%;
+      }
+      .window2 {
+        margin-top: 19%;
+        margin-left: 16%;
+      }
+      .window3 {
+        margin-top: 60%;
+        margin-left: 5%;
+        color: red;
+        font-weight: bold;
+      }
+      .logo-mobile {
+        display: none;
+      }
+      .logo {
+        display: flex;
+        margin-top: 9%;
+        margin-left: 3%;
+        width: 120%;
+      }
 
-            }
+      .window-content {
+        /* Add your content here */
+      }
+      @media screen and (max-width: 900px) {
+        /* body {height:950px;} */
 
-            .window-content {
-              /* Add your content here */
-            }
-            @media screen and (max-width: 900px) {
-              /* body {height:950px;} */
+        .building-container {
+          background-image: url("building_mobile.jpg"); /* Add your building image URL here */
+          flex-direction: column;
+          /* height: 950px; */
+        }
 
-              .building-container {
-                background-image: url("building_mobile.jpg"); /* Add your building image URL here */
-                flex-direction: column;
-                /* height: 950px; */
-              }
+        .window {
+          height: calc(97vw);
+        }
+        .column {
+          padding-bottom: 22%;
+        }
+        .window1 {
+          width: 55%;
+          top: 50px;
+          margin-top: 18%;
+          margin-left: 21%;
+          padding: 10px;
+        }
+        .header-link {
+          display: none;
+        }
+        .logo-mobile {
+          display: flex;
+          margin-top: 5%;
+          margin-left: 7%;
+          width: 105%;
+        }
+        .mobile-view-header-links {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 10%;
+          padding: 0 12%;
+        }
 
-              .window {
-                height: calc(97vw);
-              }
-              .column {
-                padding-bottom: 22%;
-            }
-              .window1 {
-              width: 55%;
-              top: 50px;
-              margin-top: 18%;
-              margin-left: 21%;
-              padding: 10px;
+        .column2 {
+          display: none;
+        }
 
-            }
-            .header-link {
-              display:none;
-            }
-            .mobile-view-header-links {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              margin-top: 35%;
-              padding: 0 12%;
-            }
-            .column2 {
-                display:none;
-              }
+        .column3 {
+          display: none;
+        }
+        .window2 {
+          display: none;
+        }
+        .window3 {
+          display: none;
+        }
+      }
 
-            .column3 {
-              display:none;
-              }
-            .window2 {
-                display: none;
+      @media screen and (min-width: 900px) {
+        .window {
+          height: calc(34vw);
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        .building-container {
+          height: 930px;
+        }
+        .window {
+          height: 50%;
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 3px; /* Adjust the width as needed */
+      }
 
-              }
-            .window3 {
-                display: none;
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 6px; /* Rounded corners for the thumb */
+      }
 
-              }
+      ::-webkit-scrollbar-track {
+        display: none; /* Hide the scrollbar track */
+      }
+      .window-image {
+        width: 80%;
+        /* height: 200px; */
+      }
 
-                  }
+      img {
+        transition: transform 0.2s;
+      }
 
-            @media screen and (min-width: 900px) {
-              .window {
-                height: calc(34vw);
-              }
-            }
-            @media screen and (min-width: 1400px) {
-              .building-container {height:950px}
-              .window {
-                height: 50%;
-              }
-            }
-            ::-webkit-scrollbar {
-              width: 12px; /* Adjust the width as needed */
-              height: 5px;
-            }
+      /* Style for the image when hovered over */
+      img:hover {
+        transform: scale(1.1); /* Increase the image size by 10% */
+      }
 
-            ::-webkit-scrollbar-thumb {
-              background: #888; /* Color of the scrollbar thumb */
-              border-radius: 6px; /* Rounded corners for the thumb */
-              height: -10%; /
-            }
+      /* Style for the image when clicked */
+      img:active {
+        transform: scale(0.9); /* Decrease the image size by 10% when clicked */
+      }
+      a {
+        text-decoration: none; /* Remove the default underline */
+        color: white; /* Set the default link color */
+        transition: color 0.2s; /* Add a smooth color transition */
+      }
 
-            ::-webkit-scrollbar-track {
-              display: none; /* Hide the scrollbar track */
-            }
-            .window-image {
-          width: 80%;
-          /* height: 200px; */
+      /* Style for text links when hovered over */
+      a:hover {
+        color: black; /* Change the link color when hovered */
+      }
+
+      /* Style for text links when clicked */
+      a:active {
+        color: grey; /* Change the link color when clicked */
       }
     </style>
   </head>
   <body>
     <div class="building-container">
+      <a class="logo-mobile" href="http://127.0.0.1:5500/index.html">
+        <img class="window-image" src="krizone_logo.png" alt="Logo"
+      /></a>
       <div class="mobile-view-header-links">
-        <a>Fashion</a><a>Art</a><a>About us</a>
+        <a>FASHION</a><a>ART</a><a>ABOUT US</a>
       </div>
       <div class="column column1">
-        <div class="header-link header-link-fashion"><snap>Fashion</snap></div>
+        <div class="header-link header-link-fashion"><a>FASHION</a></div>
         <div class="window window1">
           <div class="window-content">
             <!-- Add your content for the first window here -->
@@ -198,7 +253,11 @@
         </div>
       </div>
       <div class="column column2">
-        <div class="header-link header-link-art"><snap>Art</snap></div>
+        <a class="logo" href="http://127.0.0.1:5500/index.html">
+          <img class="window-image" src="krizone_logo.png" alt="Logo"
+        /></a>
+
+        <div class="header-link header-link-art"><a>ART</a></div>
         <div class="window window2">
           <div class="window-content">
             <!-- Add your content for the first window here -->
@@ -230,7 +289,7 @@
       </div>
       <div class="column column3">
         <div class="header-link header-link-about-us">
-          <snap>About us</snap>
+          <a>ABOUT US</a>
         </div>
 
         <div class="window window3">
