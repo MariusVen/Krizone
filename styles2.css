@@ -1,0 +1,314 @@
+body {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1352px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #dad1bf;
+    height: 100vh;
+  }
+  p {
+    font-family: Courier;
+    font-size: 200px;
+  }
+  
+  .building-container {
+    background-image: url("media/building.jpg"); /* Add your building image URL here */
+    background-size: 100%; /* Adjust the background size property */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .columns {
+    display: flex;
+    flex-direction: row;
+  }
+  .column {
+    flex: 1;
+    justify-content: center;
+    position: relative;
+  }
+  .column-3 {
+    justify-content: left;
+  }
+  
+  .window {
+    /* background: #fff; */
+    /* height: calc(34vw); */
+    color: white;
+    /* border: 1px solid #000; */
+    overflow: auto; /* Enable the scrollbar */
+    width: 63%;
+    top: 50px;
+    padding: 20px;
+  }
+  .window p {
+    text-align: justify;
+  }
+  .window-1 {
+    margin-top: 19%;
+    margin-left: 30%;
+  }
+  .window-2 {
+    margin-top: 19%;
+    margin-left: 16%;
+  }
+  .window-3 {
+    margin-top: 57%;
+    margin-left: 5%;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .building-container-no-columns {
+    /* height: 100vh; */
+    background-image: url("media/building-no-columns.jpg"); /* Add your building image URL here */
+    flex-direction: column;
+    background-size: 100%; /* Adjust the background size property */
+  }
+  
+  .window-content {
+    display: flex;
+    /* align-items: flex-start; */
+    width: 100%;
+  }
+  .logo {
+    margin-top: 3%;
+    margin-left: 30.4%;
+    width: 40%;
+  }
+  .links {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* display: flex; */
+    margin-top: 3.2%;
+  
+    /* transform: translate(50%, -50%); */
+    text-transform: uppercase;
+    font-family: verdana;
+    /* font-size: 12em; */
+  }
+  .links a {
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    /* justify-content: space-between; */
+    padding: 0 12.5%;
+  }
+  .text-no-colums {
+    background-color: white;
+    color: black;
+    margin-top: 6.2%;
+    margin-left: 12%;
+  
+    overflow: auto;
+    height: 56%;
+    width: 68%;
+    padding: 0 5% 0 5%;
+  }
+  .text-no-colums {
+    background-color: transparent;
+  }
+  .text-no-colums h1 {
+    color: white;
+  }
+  
+  /* Mobile view */
+  @media screen and (max-width: 1350px) {
+    /* body {height:950px;} */
+  
+    .building-container {
+      background-image: url("media/building_mobile.jpg"); /* Add your building image URL here */
+      flex-direction: column;
+      background-size: cover;
+      /* height: 950px; */
+    }
+    .building-container-no-columns {
+      padding-bottom: 22%;
+    }
+    .window {
+      height: calc(97vw);
+    }
+    .column {
+      padding-bottom: 22%;
+    }
+    .window-1 {
+      width: 55%;
+      top: 50px;
+      margin-top: 18%;
+      margin-left: 21%;
+      padding: 10px;
+    }
+  
+    .column-2 {
+      display: none;
+    }
+  
+    .column-3 {
+      display: none;
+    }
+    .window-2 {
+      display: none;
+    }
+    .window-3 {
+      display: none;
+    }
+    .logo {
+      margin-top: 3%;
+      margin-left: -7%;
+      width: 115%;
+    }
+    .links {
+      /* font-size: 95%; */
+      margin-top: 10%;
+    }
+    .links a {
+      /* padding: 0 12%; */
+      padding: 0 14%;
+    }
+    .text-no-colums {
+      margin-top: 19%;
+      margin-left: 20%;
+      overflow: auto;
+      height: 100%;
+      width: 51%;
+      padding-bottom: 22%;
+    }
+    .text-no-colums-img {
+      width: 100%;f
+    }
+    .text-no-colums-img-2 {
+      width: 100%;
+    }
+    .window-no-column {
+      height: calc(65vw);
+      padding-bottom: 22%;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  /* @media screen and (min-width: 900px) {
+      .window {
+        height: calc(34vw);
+      }
+    } */
+  
+  @media screen and (max-width: 1200px) {
+    .links a {
+      padding: 0 13%;
+      /* padding: 0 14%; */
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .links a {
+      padding: 0 11%;
+      /* padding: 0 14%; */
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .links a {
+      padding: 0 10%;
+      /* padding: 0 14%; */
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .links a {
+      padding: 0 10%;
+      /* padding: 0 14%; */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .links a {
+      padding: 0 10%;
+      /* padding: 0 14%; */
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 1350px) {
+    .building-container {
+      height: 930px;
+    }
+    .window {
+      height: 20%;
+    }
+    p {
+      font-size: 16px;
+    }
+    .text-no-colums-img {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      clear: both;
+    }
+    .text-no-colums-img-2 {
+      float: right;
+      width: 50%;
+      padding: 10px;
+      clear: both;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 3px; /* Adjust the width as needed */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-track {
+    display: none; /* Hide the scrollbar track */
+  }
+  .window-image {
+    width: 80%;
+    /* height: 200px; */
+  }
+  
+  .window img {
+    transition: transform 0.2s;
+  }
+  
+  /* Style for the image when hovered over */
+  .window img:hover {
+    transform: scale(1.1); /* Increase the image size by 10% */
+  }
+  
+  /* Style for the image when clicked */
+  .window img:active {
+    transform: scale(0.9); /* Decrease the image size by 10% when clicked */
+  }
+  
+  a {
+    text-decoration: none; /* Remove the default underline */
+    color: white;
+  }
+  
+  .links a {
+    text-decoration: none; /* Remove the default underline */
+    color: black; /* Set the default link color */
+    transition: color 0.2s; /* Add a smooth color transition */
+  }
+  
+  /* Style for text links when hovered over */
+  .links a:hover {
+    color: white; /* Change the link color when hovered */
+  }
+  
+  /* Style for text links when clicked */
+  .links a:active {
+    color: grey; /* Change the link color when clicked */
+  }
+  
+  a.active {
+    color: white; /* Change the color to your desired color */
+  }
+  

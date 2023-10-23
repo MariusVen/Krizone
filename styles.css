@@ -16,7 +16,7 @@ p {
 }
 
 .building-container {
-  background-image: url("building.jpg"); /* Add your building image URL here */
+  background-image: url("media/building.jpg"); /* Add your building image URL here */
   background-size: 100%; /* Adjust the background size property */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   flex-direction: column;
@@ -67,42 +67,62 @@ p {
 
 .building-container-no-columns {
   /* height: 100vh; */
-  background-image: url("building-no-columns.jpg"); /* Add your building image URL here */
+  background-image: url("media/building-no-columns.jpg"); /* Add your building image URL here */
   flex-direction: column;
   background-size: 100%; /* Adjust the background size property */
 }
-.logo-no-columns {
+
+.window-content {
+  display: flex;
+  /* align-items: flex-start; */
+  width: 100%;
+}
+.logo {
   margin-top: 3%;
   margin-left: 30.4%;
   width: 40%;
 }
-.links-no-columns {
+.links {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* display: flex; */
-  margin-top: 3%;
+  margin-top: 3.2%;
+
+  /* transform: translate(50%, -50%); */
+  text-transform: uppercase;
+  font-family: verdana;
+  /* font-size: 12em; */
 }
-.links-no-columns a {
+.links a {
   flex-direction: row;
   align-items: center;
+  font-weight: 500;
   /* justify-content: space-between; */
-  margin-top: 10%;
-  padding: 0 12%;
+  padding: 0 12.5%;
 }
 .text-no-colums {
   background-color: white;
   color: black;
-  margin-top: 7%;
+  margin-top: 6.2%;
   margin-left: 12%;
 
   overflow: auto;
-  height: 55%;
-  width: 78%;
+  height: 56%;
+  width: 68%;
+  padding: 0 5% 0 5%;
 }
+.text-no-colums2 {
+  background-color: transparent;
+}
+.text-no-colums h1 {
+  color: white;
+}
+
+/* Mobile view */
 @media screen and (max-width: 1350px) {
   /* body {height:950px;} */
 
   .building-container {
-    background-image: url("building_mobile.jpg"); /* Add your building image URL here */
+    background-image: url("media/building_mobile.jpg"); /* Add your building image URL here */
     flex-direction: column;
     background-size: cover;
     /* height: 950px; */
@@ -137,16 +157,17 @@ p {
   .window-3 {
     display: none;
   }
-  .logo-no-columns {
+  .logo {
     margin-top: 3%;
     margin-left: -7%;
     width: 115%;
   }
-  .links-no-columns {
+  .links {
     /* font-size: 95%; */
-    margin-top: 9.67%;
+    margin-top: 10%;
   }
-  .links-no-columns a {
+  .links a {
+    /* padding: 0 12%; */
     padding: 0 14%;
   }
   .text-no-colums {
@@ -154,8 +175,14 @@ p {
     margin-left: 20%;
     overflow: auto;
     height: 100%;
-    width: 60%;
+    width: 51%;
     padding-bottom: 22%;
+  }
+  .text-no-colums-img {
+    width: 100%;f
+  }
+  .text-no-colums-img-2 {
+    width: 100%;
   }
   .window-no-column {
     height: calc(65vw);
@@ -167,19 +194,66 @@ p {
 }
 
 /* @media screen and (min-width: 900px) {
-  .window {
-    height: calc(34vw);
+    .window {
+      height: calc(34vw);
+    }
+  } */
+
+@media screen and (max-width: 1200px) {
+  .links a {
+    padding: 0 13%;
+    /* padding: 0 14%; */
   }
-} */
+}
+@media screen and (max-width: 900px) {
+  .links a {
+    padding: 0 11%;
+    /* padding: 0 14%; */
+  }
+}
+@media screen and (max-width: 800px) {
+  .links a {
+    padding: 0 10%;
+    /* padding: 0 14%; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .links a {
+    padding: 0 10%;
+    /* padding: 0 14%; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links a {
+    padding: 0 10%;
+    /* padding: 0 14%; */
+  }
+  a {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1350px) {
   .building-container {
     height: 930px;
   }
   .window {
-    height: 22%;
+    height: 20%;
   }
   p {
     font-size: 16px;
+  }
+  .text-no-colums-img {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    clear: both;
+  }
+  .text-no-colums-img-2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    clear: both;
   }
 }
 ::-webkit-scrollbar {
@@ -199,31 +273,41 @@ p {
   /* height: 200px; */
 }
 
-img {
+.window img {
   transition: transform 0.2s;
 }
 
 /* Style for the image when hovered over */
-img:hover {
+.window img:hover {
   transform: scale(1.1); /* Increase the image size by 10% */
 }
 
 /* Style for the image when clicked */
-img:active {
+.window img:active {
   transform: scale(0.9); /* Decrease the image size by 10% when clicked */
 }
+
 a {
+  text-decoration: none; /* Remove the default underline */
+  color: white;
+}
+
+.links a {
   text-decoration: none; /* Remove the default underline */
   color: black; /* Set the default link color */
   transition: color 0.2s; /* Add a smooth color transition */
 }
 
 /* Style for text links when hovered over */
-a:hover {
+.links a:hover {
   color: white; /* Change the link color when hovered */
 }
 
 /* Style for text links when clicked */
-a:active {
+.links a:active {
   color: grey; /* Change the link color when clicked */
+}
+
+a.active {
+  color: white; /* Change the color to your desired color */
 }
