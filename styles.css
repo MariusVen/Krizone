@@ -72,11 +72,6 @@ p {
   background-size: 100%; /* Adjust the background size property */
 }
 
-.window-content {
-  display: flex;
-  /* align-items: flex-start; */
-  width: 100%;
-}
 .logo {
   margin-top: 3%;
   margin-left: 30.4%;
@@ -143,6 +138,11 @@ p {
     margin-left: 21%;
     padding: 10px;
   }
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
   .column-2 {
     display: none;
@@ -156,6 +156,11 @@ p {
   }
   .window-3 {
     display: none;
+  }
+  .window-content {
+    display: flex;
+    align-items: row;
+    width: 100%;
   }
   .logo {
     margin-top: 3%;
@@ -179,7 +184,7 @@ p {
     padding-bottom: 22%;
   }
   .text-no-colums-img {
-    width: 100%;f
+    width: 100%;
   }
   .text-no-colums-img-2 {
     width: 100%;
@@ -239,6 +244,11 @@ p {
   }
   .window {
     height: 20%;
+  }
+  .window-content {
+    display: flex;
+    /* align-items: flex-start; */
+    width: 100%;
   }
   p {
     font-size: 16px;
