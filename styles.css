@@ -97,7 +97,7 @@ p {
 .text-no-colums {
   background-color: white;
   color: black;
-  margin-top: 6.2%;
+  margin-top: 7.2%;
   margin-left: 12%;
 
   overflow: auto;
@@ -108,9 +108,7 @@ p {
 .text-no-colums2 {
   background-color: transparent;
 }
-.text-no-colums h1 {
-  color: white;
-}
+
 .about-us p {
   color: white;
   font-size: 25px;
@@ -123,6 +121,9 @@ p {
   font-weight: normal;
   font-weight: normal;
 }
+.window-no-column h1 {
+  color: white;
+}
 /* Mobile view */
 @media screen and (max-width: 1350px) {
   /* body {height:950px;} */
@@ -132,6 +133,11 @@ p {
     flex-direction: column;
     background-size: cover;
     /* height: 950px; */
+  }
+  .building-container-article {
+    background-image: url("media/building_mobile_top.jpg"); /* Add your building image URL here */
+    background-size: contain;
+    background-position: center top;
   }
   .building-container-no-columns {
     padding-bottom: 22%;
@@ -194,6 +200,18 @@ p {
     width: 51%;
     padding-bottom: 22%;
   }
+
+  .article-mobile-view {
+    margin-top: 17%;
+    margin-left: 5%;
+    overflow: auto;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 22%;
+  }
+  .article-mobile-view h1 {
+    color: black;
+  }
   .text-no-colums-img {
     width: 100%;
   }
@@ -202,8 +220,11 @@ p {
   }
   .window-no-column {
     height: calc(65vw);
-    padding-bottom: 22%;
   }
+
+  /* .article-name-mobile {
+    color: black;
+  } */
   p {
     font-size: 20px;
   }
@@ -296,26 +317,22 @@ p {
   /* height: 200px; */
 }
 
-.window .logo img {
+.window img {
   transition: transform 0.2s;
 }
 
 /* Style for the image when hovered over */
-.window .logo img:hover {
+.window img:hover {
   transform: scale(1.1); /* Increase the image size by 10% */
 }
 
 /* Style for the image when clicked */
-.window .logo img:active {
+.window img:active {
   transform: scale(0.9); /* Decrease the image size by 10% when clicked */
 }
 
 .logo img {
   transition: transform 0.2s;
-}
-
-Style for the image when hovered over .logo img:hover {
-  transform: scale(1.1); /* Increase the image size by 10% */
 }
 
 /* Style for the image when clicked */
