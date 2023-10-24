@@ -14,6 +14,10 @@ p {
   font-family: Courier;
   font-size: 200px;
 }
+pre {
+  color: white;
+  margin: 0px;
+}
 
 .building-container {
   background-image: url("media/building.jpg"); /* Add your building image URL here */
@@ -111,7 +115,7 @@ p {
 
 .about-us p {
   color: white;
-  font-size: 25px;
+  font-size: 16px;
   text-align: justify;
 }
 .about-us h3 {
@@ -124,7 +128,21 @@ p {
 .window-no-column h1 {
   color: white;
 }
+.about-us {
+  background-color: black;
+}
+.about-us-pictures-desktop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.about-us-pictures-desktop img {
+  width: 33.33%;
+  padding: 0 10px 0 10px;
+}
+
 /* Mobile view */
+
 @media screen and (max-width: 1350px) {
   /* body {height:950px;} */
 
@@ -229,6 +247,12 @@ p {
   p {
     font-size: 20px;
   }
+  .about-us-pictures-desktop {
+    display: none;
+  }
+  .about-us-pictures-mobile img {
+    width: 100%;
+  }
 }
 
 /* @media screen and (min-width: 900px) {
@@ -299,6 +323,9 @@ p {
     width: 50%;
     padding: 10px;
     clear: both;
+  }
+  .about-us-pictures-mobile {
+    display: none;
   }
 }
 ::-webkit-scrollbar {
