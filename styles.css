@@ -73,9 +73,9 @@ p {
 }
 
 .logo {
-  margin-top: 3%;
-  margin-left: 30.4%;
-  width: 40%;
+  margin-top: 2.8%;
+  margin-left: 30%;
+  width: 42%;
 }
 .links {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -174,7 +174,7 @@ p {
     width: 100%;
   }
   .logo {
-    margin-top: 3%;
+    margin-top: 4%;
     margin-left: -7%;
     width: 115%;
   }
@@ -296,17 +296,30 @@ p {
   /* height: 200px; */
 }
 
-.window img {
+.window .logo img {
   transition: transform 0.2s;
 }
 
 /* Style for the image when hovered over */
-.window img:hover {
+.window .logo img:hover {
   transform: scale(1.1); /* Increase the image size by 10% */
 }
 
 /* Style for the image when clicked */
-.window img:active {
+.window .logo img:active {
+  transform: scale(0.9); /* Decrease the image size by 10% when clicked */
+}
+
+.logo img {
+  transition: transform 0.2s;
+}
+
+Style for the image when hovered over .logo img:hover {
+  transform: scale(1.1); /* Increase the image size by 10% */
+}
+
+/* Style for the image when clicked */
+.logo img:active {
   transform: scale(0.9); /* Decrease the image size by 10% when clicked */
 }
 
