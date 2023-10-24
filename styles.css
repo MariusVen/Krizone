@@ -138,6 +138,7 @@ p {
     background-image: url("media/building_mobile_top.jpg"); /* Add your building image URL here */
     background-size: contain;
     background-position: center top;
+    background-color: white;
   }
   .building-container-no-columns {
     padding-bottom: 22%;
