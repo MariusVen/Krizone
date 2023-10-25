@@ -247,8 +247,8 @@ pre {
   p {
     font-size: 20px;
   }
-  .about-us-pictures-desktop {
-    display: hidden;
+  .about-us-pictures-desktop img {
+    display: none;
   }
   .about-us-pictures-mobile img {
     width: 100%;
