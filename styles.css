@@ -140,7 +140,12 @@ pre {
   width: 33.33%;
   padding: 0 10px 0 10px;
 }
-
+input[type="text"] {
+  border: 1px solid red;
+  width: 200px;
+  color: red; /* Set text color to red */
+  background-color: black; /* Set background color to black */
+}
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
@@ -240,6 +245,12 @@ pre {
   .window-no-column {
     height: calc(65vw);
   }
+  #email-input-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+  }
 
   /* .article-name-mobile {
     color: black;
@@ -253,8 +264,10 @@ pre {
   .about-us-pictures-mobile img {
     width: 100%;
   }
+  input[type="text"] {
+    width: 300px;
+  }
 }
-
 /* @media screen and (min-width: 900px) {
     .window {
       height: calc(34vw);
@@ -326,6 +339,12 @@ pre {
   }
   .about-us-pictures-mobile {
     display: none;
+  }
+  #email-input-paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /* Horizontally center the content */
+    align-items: center;
   }
 }
 ::-webkit-scrollbar {
