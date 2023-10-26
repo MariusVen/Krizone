@@ -18,6 +18,9 @@ pre {
   color: white;
   margin: 0px;
 }
+span {
+  color: white;
+}
 
 .building-container {
   background-image: url("media/building.jpg"); /* Add your building image URL here */
@@ -121,10 +124,10 @@ pre {
 .about-us h3 {
   color: white;
 }
-.about-us snap {
-  font-weight: normal;
-  font-weight: normal;
+.about-us b {
+  color: white;
 }
+
 .window-no-column h1 {
   color: white;
 }
@@ -147,6 +150,41 @@ input[type="text"] {
   color: red; /* Set text color to red */
   background-color: black; /* Set background color to black */
 }
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+}
+.contributors p {
+  width: 50%;
+  font-size: 14px;
+  margin: 15px;
+}
+#WEB-DEVELOPER {
+  text-align: left;
+}
+#CONTRIBUTING-EDITOR {
+  text-align: right;
+}
+.founder {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.founder-details {
+  display: inline;
+  font-size: 13px;
+  text-align: left;
+  align-items: left;
+}
+
+.founder-title {
+  margin-left: 60px;
+}
+.founder-title,
+.founder-name {
+  display: inline;
+}
+
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
@@ -267,6 +305,27 @@ input[type="text"] {
   }
   input[type="text"] {
     width: 300px;
+  }
+  .contributors {
+    flex-direction: column;
+    align-items: center;
+  }
+  #web-developer {
+    text-align: center;
+  }
+  #contributing-editor {
+    text-align: center;
+  }
+  .founder .founder-details {
+    display: block;
+    text-align: center;
+  }
+  .founder-title {
+    margin-left: 0px;
+  }
+  .founder-title,
+  .founder-name {
+    display: block;
   }
 }
 /* @media screen and (min-width: 900px) {
