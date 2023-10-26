@@ -217,7 +217,7 @@ input[type="text"] {
     background-color: white;
   }
   .building-container-no-columns {
-    padding-bottom: 22%;
+    /* padding-bottom: 22%; */
   }
   .window {
     height: calc(97vw);
