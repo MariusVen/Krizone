@@ -139,7 +139,9 @@ span {
 .about-us b {
   color: white;
 }
-
+.about-us-bottom-section p {
+  text-align: center;
+}
 .window-no-column h1 {
   color: white;
 }
@@ -178,24 +180,7 @@ input[type="text"] {
 #contributing-editor {
   text-align: right;
 }
-.founder {
-  text-align: left;
-  margin-bottom: 5px;
-}
-.founder-details {
-  display: inline;
-  font-size: 13px;
-  text-align: left;
-  align-items: left;
-}
 
-.founder-title {
-  margin-left: 60px;
-}
-.founder-title,
-.founder-name {
-  display: inline;
-}
 .instagram {
   padding-bottom: 50px;
 }
@@ -208,6 +193,8 @@ input[type="text"] {
     background-image: url("media/building_mobile.jpg"); /* Add your building image URL here */
     flex-direction: column;
     background-size: cover;
+    background-position: center top;
+
     /* height: 950px; */
   }
   .building-container-article {
@@ -333,6 +320,7 @@ input[type="text"] {
     background-color: black;
     padding-bottom: 20px;
   }
+
   .about-us-pictures-desktop img {
     display: none;
   }
@@ -351,17 +339,6 @@ input[type="text"] {
   }
   #contributing-editor {
     text-align: center;
-  }
-  .founder .founder-details {
-    display: block;
-    text-align: center;
-  }
-  .founder-title {
-    margin-left: 0px;
-  }
-  .founder-title,
-  .founder-name {
-    display: block;
   }
 }
 /* @media screen and (min-width: 900px) {
@@ -439,7 +416,7 @@ input[type="text"] {
   #email-input-paragraph {
     display: flex;
     flex-direction: row;
-    justify-content: left; /* Horizontally center the content */
+    justify-content: center; /* Horizontally center the content */
     align-items: center;
   }
 }
