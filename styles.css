@@ -92,7 +92,7 @@ span {
 
 nav ul {
   font-family: romana-tw;
-
+  font-weight: 600;
   list-style: none; /* Remove the default list styles */
   padding: 0;
   padding: 0 7% 0 7%;
@@ -100,6 +100,7 @@ nav ul {
   font-size: clamp(20px, 4vw, 23px);
   display: flex;
   justify-content: space-between; /* Distribute links equally with space between them */
+  text-shadow: 2px 2px 4px rgba(248, 244, 244, 0.7);
 }
 
 nav ul li {
