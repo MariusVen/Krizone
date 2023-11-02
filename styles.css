@@ -269,6 +269,9 @@ input[type="text"] {
     background-position: center top;
     background-color: black;
   }
+  .building-container-article-background {
+    background-color: white;
+  }
   .building-container-no-columns {
     /* padding-bottom: 22%; */
   }
