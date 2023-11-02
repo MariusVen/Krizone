@@ -227,7 +227,7 @@ input[type="text"] {
   /* body {height:950px;} */
 
   .building-container {
-    background-image: url("media/building_mobile.jpg"); /* Add your building image URL here */
+    background-image: url("media/building_mobile2.jpg"); /* Add your building image URL here */
     flex-direction: column;
     background-size: cover;
     background-position: center top;
@@ -244,7 +244,7 @@ input[type="text"] {
     /* padding-bottom: 22%; */
   }
   .window {
-    height: calc(97vw);
+    height: calc(110vw);
   }
   .column {
     padding-bottom: 22%;
