@@ -226,10 +226,19 @@ input[type="text"] {
   font-size: 13px;
   text-align: center;
 }
+
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
   /* body {height:950px;} */
+  .building-botom-mobile {
+    position: cover;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 
   .building-container {
     background-image: url("media/building_mobile2.jpg"); /* Add your building image URL here */
@@ -383,9 +392,12 @@ input[type="text"] {
   }
 }
 
-/*  */
+/*  Desktop view*/
 
 @media screen and (min-width: 1350px) {
+  .building-botom-mobile {
+    display: none;
+  }
   .building-container {
     height: 930px;
   }
