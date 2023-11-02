@@ -235,6 +235,9 @@ input[type="text"] {
 
 @media screen and (max-width: 1350px) {
   /* body {height:950px;} */
+  .article-text img {
+    width: 90%;
+  }
 
   .article-category img {
     width: 70%;
