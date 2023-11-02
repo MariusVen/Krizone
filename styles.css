@@ -21,6 +21,11 @@ pre {
 span {
   color: white;
 }
+@font-face {
+  font-family: "GFS Didot";
+  src: url("path/to/GFSDidot-Regular.ttf") format("truetype");
+  /* Add different formats for better browser support */
+}
 
 .building-container {
   background-image: url("media/building.jpg"); /* Add your building image URL here */
@@ -126,14 +131,14 @@ nav ul li a {
 }
 .article-text p {
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "GFS Didot", serif;
   font-size: 16px;
   text-align: justify;
 }
 .article-text h1 {
   text-align: left;
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 26px;
 }
 .article-text h2 {
   text-align: left;
@@ -464,7 +469,9 @@ a {
   text-decoration: none; /* Remove the default underline */
   color: white;
 }
-
+a.active {
+  color: white; /* Change the color to your desired color */
+}
 nav ul li a {
   text-decoration: none; /* Remove the default underline */
   color: black; /* Set the default link color */
@@ -479,8 +486,4 @@ nav ul li a:hover {
 /* Style for text links when clicked */
 nav ul li a:active {
   color: grey; /* Change the link color when clicked */
-}
-
-a.active {
-  color: white; /* Change the color to your desired color */
 }
