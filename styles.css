@@ -60,7 +60,8 @@ span {
   padding: 20px;
 }
 .window p {
-  text-align: justify;
+  text-align: center;
+  font-size: 100%;
 }
 .window-1 {
   margin-top: 10%;
@@ -91,16 +92,18 @@ span {
 }
 
 nav ul {
+  /* background-color: rgba(231, 225, 225, 0.3); */
   font-family: romana-tw;
   font-weight: 600;
   list-style: none; /* Remove the default list styles */
   padding: 0;
+  height: 37px;
   padding: 0 7% 0 7%;
   margin-top: 3.6%;
   font-size: clamp(20px, 4vw, 23px);
   display: flex;
   justify-content: space-between; /* Distribute links equally with space between them */
-  text-shadow: 2px 2px 4px rgba(248, 244, 244, 0.7);
+  text-shadow: 0px 4px 4px rgba(248, 244, 244, 0.7);
 }
 
 nav ul li {
@@ -135,6 +138,7 @@ nav ul li a {
   font-family: "GFS Didot", serif;
   font-size: 16px;
   text-align: justify;
+  line-height: 1.5;
 }
 .article-text h1 {
   text-align: left;
@@ -157,7 +161,7 @@ nav ul li a {
   height: 53.5%;
   width: 73.6%;
   overflow: auto;
-  margin-top: 56px;
+  margin-top: 44px;
   margin-left: 140px;
   padding: 20px 50px 20px 50px;
   background-color: black;
@@ -172,6 +176,9 @@ nav ul li a {
 }
 .about-us h3 {
   color: white;
+}
+.about-us h1 {
+  font-family: romana-tw;
 }
 
 .about-us b {
@@ -231,10 +238,17 @@ input[type="text"] {
 .article-category p {
   text-align: center;
 }
+.article-answers {
+  margin-left: 50px;
+  line-height: 1.5;
+}
 
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
+  .about-us p {
+    text-align: center;
+  }
   /* body {height:950px;} */
   .article-text img {
     width: 90%;
@@ -326,7 +340,7 @@ input[type="text"] {
   } */
 
   nav ul {
-    padding: 0 7% 0 7%;
+    padding: 0 3% 0 3%;
     margin-top: 9.6%;
     font-size: clamp(1px, 3vw, 40px);
   }
