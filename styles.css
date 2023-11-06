@@ -456,10 +456,12 @@ input[type="text"] {
   }
   .article-category {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .article-category img {
-    width: 80%;
+  .article-category div {
+    max-width: 30%;
   }
   .article-category p {
     padding: 0 5% 0 5%;
