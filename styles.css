@@ -283,7 +283,7 @@ input[type="text"] {
   }
 
   .building-container {
-    background-image: url("media/building_mobile4.jpg"); /* Add your building image URL here */
+    background-image: url("media/building_mobile5.jpg"); /* Add your building image URL here */
     flex-direction: column;
     background-size: cover;
     background-position: center top;
@@ -291,7 +291,7 @@ input[type="text"] {
     /* height: 950px; */
   }
   .building-container-article {
-    background-image: url("media/building_mobile_top.jpg"); /* Add your building image URL here */
+    background-image: url("media/building_mobile_top3.jpg"); /* Add your building image URL here */
     background-size: contain;
     background-position: center top;
     background-color: black;
@@ -335,7 +335,7 @@ input[type="text"] {
     width: 100%;
   }
   .logo {
-    margin-top: 4%;
+    margin-top: 7.2%;
     margin-left: -7%;
     width: 115%;
   }
