@@ -27,6 +27,29 @@ span {
   /* Add different formats for better browser support */
 }
 
+.line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.red-line {
+  flex: 1;
+  height: 1px;
+  background-color: red;
+}
+.red-line2 {
+  max-width: 7%;
+  flex: 1;
+  height: 1px;
+  background-color: red;
+}
+
+.red-text {
+  color: red;
+  padding: 0 10px;
+}
+
 .building-container {
   background-image: url("media/building.jpg"); /* Add your building image URL here */
   background-size: 100%; /* Adjust the background size property */
@@ -250,6 +273,18 @@ input[type="text"] {
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
+  .red-line {
+    flex: 1;
+    height: 1px;
+    background-color: red;
+  }
+  .red-line2 {
+    max-width: 100%;
+    flex: 1;
+    height: 1px;
+    background-color: red;
+  }
+
   .window p {
     font-size: clamp(17px, 3vw, 40px);
   }
