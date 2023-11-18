@@ -461,6 +461,9 @@ input[type="email"] {
   #contributing-editor {
     text-align: center;
   }
+  #mobile-custom-paragraph {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 800px) {
