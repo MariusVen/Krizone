@@ -6,6 +6,8 @@
     <title>Krizone | The art unleash</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta name="robots" content="noindex, nofollow" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="config.js"></script>
   </head>
   <body>
     <div
@@ -76,13 +78,77 @@
               <p>
                 Join the <b>KRIZONE</b> by signing up to our newsletter:&nbsp;
               </p>
-              <input
-                type="text"
-                name="email-input"
-                id="input"
-                value=""
-                placeholder="Enter email here"
-              />&nbsp;<button>Submit</button>
+              <form id="subscriptionForm">
+                <input
+                  placeholder="Enter email here"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <input id="submitButton" type="submit" value="Subscribe" />
+              </form>
+
+              <!-- Include your Email.js user ID and template ID -->
+              <script>
+                emailjs.init(emailjsUserId); // Replace with your Email.js user ID
+              </script>
+              <script>
+                document.getElementById("subscriptionForm").onsubmit =
+                  function (event) {
+                    event.preventDefault();
+
+                    // Disable the submit button
+                    document.getElementById("submitButton").disabled = true;
+
+                    // Get the email address from the form
+                    var email = document.getElementById("email").value;
+
+                    // Send the email using Email.js
+                    emailjs
+                      .send("service_jem7bb9", "template_cmmp2zc", {
+                        email: email,
+                      })
+                      .then(
+                        function (response) {
+                          console.log("Email sent successfully", response);
+                          // Show success notification
+                          showNotification(
+                            "Email sent successfully",
+                            "success"
+                          );
+                          document.getElementById("subscriptionForm").reset();
+                        },
+                        function (error) {
+                          console.log("Email failed to send", error);
+                          // Show error notification
+                          showNotification(
+                            "Email failed to send. Please try again later.",
+                            "error"
+                          );
+                        }
+                      );
+                  };
+
+                function showNotification(message, type) {
+                  var notification = document.createElement("div");
+                  notification.className = "notification " + type;
+                  notification.appendChild(document.createTextNode(message));
+                  document.body.appendChild(notification);
+
+                  // Center the notification
+                  notification.style.position = "fixed";
+                  notification.style.top = "50%";
+                  notification.style.left = "50%";
+                  notification.style.transform = "translate(-50%, -50%)";
+
+                  // Remove the notification after 3 seconds
+                  setTimeout(function () {
+                    document.body.removeChild(notification);
+                    document.getElementById("submitButton").disabled = false;
+                  }, 3000);
+                }
+              </script>
             </div>
 
             <br />

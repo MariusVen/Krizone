@@ -227,11 +227,12 @@ nav ul li a {
   width: 30%;
   padding: 0 10px 0 10px;
 }
-input[type="text"] {
+input[type="email"] {
   border: 1px solid red;
   width: 200px;
   color: red; /* Set text color to red */
   background-color: black; /* Set background color to black */
+  margin-right: 5px;
 }
 
 .contributors {
@@ -269,6 +270,10 @@ input[type="text"] {
 /* Mobile view */
 
 @media screen and (max-width: 1350px) {
+  input[type="email"] {
+    margin-bottom: 10px;
+  }
+
   .red-line {
     flex: 1;
     height: 1px;
@@ -443,7 +448,7 @@ input[type="text"] {
   .about-us-pictures-mobile img {
     width: 100%;
   }
-  input[type="text"] {
+  input[type="email"] {
     width: 300px;
   }
   .contributors {
@@ -589,4 +594,20 @@ nav ul li a:hover {
 /* Style for text links when clicked */
 nav ul li a:active {
   color: grey; /* Change the link color when clicked */
+}
+.notification {
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
 }
