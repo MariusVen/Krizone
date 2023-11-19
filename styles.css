@@ -24,7 +24,6 @@ span {
 @font-face {
   font-family: "GFS Didot";
   src: url("path/to/GFSDidot-Regular.ttf") format("truetype");
-  /* Add different formats for better browser support */
 }
 
 .line {
@@ -73,10 +72,7 @@ span {
 }
 
 .window {
-  /* background: #fff; */
-  /* height: calc(34vw); */
   color: white;
-  /* border: 1px solid #000; */
   overflow: auto; /* Enable the scrollbar */
   width: 63%;
   top: 50px;
@@ -103,7 +99,6 @@ span {
 }
 
 .building-container-no-columns {
-  /* height: 100vh; */
   background-image: url("media/building-no-columns.jpg"); /* Add your building image URL here */
   flex-direction: column;
   background-size: 100%; /* Adjust the background size property */
@@ -116,7 +111,6 @@ span {
 }
 
 nav ul {
-  /* background-color: rgba(231, 225, 225, 0.3); */
   font-family: romana-tw;
   font-weight: 600;
   list-style: none; /* Remove the default list styles */
@@ -324,8 +318,6 @@ input[type="email"] {
     flex-direction: column;
     background-size: cover;
     background-position: center top;
-
-    /* height: 950px; */
   }
   .building-container-article {
     background-image: url("media/building_mobile_top3.jpg"); /* Add your building image URL here */
@@ -336,28 +328,19 @@ input[type="email"] {
   .building-container-article-background {
     background-color: white;
   }
-  .building-container-no-columns {
-    /* padding-bottom: 22%; */
-  }
+
   .columns {
     display: none;
   }
-  .colums-mobile {
+  .columns-mobile {
     overflow: auto; /* Enable the scrollbar */
     height: calc(120vw);
     width: 88%;
     top: 50px;
     margin: 17.8% 5% 20% 5%;
-
-    /* padding: 10px; */
-    /* padding-bottom: 17.6%; */
   }
-  .colums-mobile p {
+  .columns-mobile p {
     margin: 0 15% 10% 15%;
-  }
-  .colums-mobile-article {
-    /* height: calc(120vw); */
-    /* padding-bottom: 17.6%; */
   }
 
   .window-content {
@@ -468,25 +451,23 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 800px) {
-  .colums-mobile {
+  .columns-mobile {
     margin-top: 17.5%;
   }
 }
 @media screen and (max-width: 500px) {
-  .colums-mobile {
+  .columns-mobile {
     margin-top: 17.3%;
   }
 }
 /*  Desktop view*/
 
 @media screen and (min-width: 1350px) {
-  .colums-mobile {
+  .columns-mobile {
     display: none;
   }
   .window-image {
     width: 80%;
-    /* height: 200px; */
-    /* box-shadow: 0 0 10px rgba(248, 247, 247, 0.8); */
   }
   .article-category {
     display: flex;
@@ -508,12 +489,10 @@ input[type="email"] {
   }
   .window {
     height: 490px;
-    /* height: 20%; */
-    /* margin-bottom: 20%; */
   }
   .window-content {
     display: flex;
-    /* align-items: flex-start; */
+
     width: 100%;
   }
   p {
