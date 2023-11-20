@@ -339,7 +339,7 @@ input[type="email"] {
   .columns-mobile {
     overflow: auto; /* Enable the scrollbar */
     height: calc(120vw);
-    width: 88%;
+    width: 88.5%;
     top: 50px;
     margin: 17.8% 5% 20% 5%;
   }
@@ -456,7 +456,7 @@ input[type="email"] {
 
 @media screen and (max-width: 800px) {
   .columns-mobile {
-    margin-top: 17.5%;
+    margin-top: 17.7%;
   }
 }
 @media screen and (max-width: 500px) {
