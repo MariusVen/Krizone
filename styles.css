@@ -67,6 +67,9 @@ span {
   justify-content: center;
   position: relative;
 }
+.column-2 {
+  margin-left: 1%;
+}
 .column-3 {
   justify-content: left;
 }
@@ -84,16 +87,16 @@ span {
   padding: 0 10% 5% 10%;
 }
 .window-1 {
-  margin-top: 10%;
-  margin-left: 30%;
+  margin-top: 9.65%;
+  margin-left: 31.4%;
 }
 .window-2 {
-  margin-top: 10%;
-  margin-left: 15.8%;
+  margin-top: 9.65%;
+  margin-left: 15%;
 }
 .window-3 {
   margin-top: 57%;
-  margin-left: 5%;
+  margin-left: 2%;
   color: red;
   font-weight: bold;
 }
@@ -223,6 +226,7 @@ nav ul li a {
   padding: 0 10px 0 10px;
 }
 input[type="email"] {
+  border-radius: 0%;
   border: 1px solid red;
   width: 200px;
   color: red; /* Set text color to red */
@@ -488,7 +492,7 @@ input[type="email"] {
     height: 930px;
   }
   .window {
-    height: 490px;
+    height: 496px;
   }
   .window-content {
     display: flex;
@@ -528,16 +532,19 @@ input[type="email"] {
   }
 }
 ::-webkit-scrollbar {
-  width: 7px; /* Adjust the width as needed */
+  width: 10px; /* Adjust the width as needed */
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the scrollbar thumb */
-  border-radius: 6px; /* Rounded corners for the thumb */
+  background-color: #666565;
+}
+::-webkit-scrollbar-track {
+  background-color: #c0bdbd;
 }
 
-::-webkit-scrollbar-track {
-  display: none; /* Hide the scrollbar track */
+::-webkit-scrollbar-thumb:active {
+  background-color: #333; /* Change the color when clicked */
 }
 
 .window img {
@@ -600,4 +607,9 @@ nav ul li a:active {
 .error {
   background-color: #f44336;
   color: white;
+}
+#submitButton {
+  background-color: white; /* Change the background color to green */
+  color: black; /* Change the text color to white */
+  border-radius: 0%;
 }
