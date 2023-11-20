@@ -532,16 +532,17 @@ input[type="email"] {
   }
 }
 ::-webkit-scrollbar {
-  width: 10px; /* Adjust the width as needed */
+  width: 8px; /* Adjust the width as needed */
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #666565;
+  background-color: #888787;
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: #333; /* Change the color when clicked */
+  background-color: #575656; /* Change the color when clicked */
 }
 
 .window img {
