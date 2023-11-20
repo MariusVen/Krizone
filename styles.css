@@ -539,9 +539,6 @@ input[type="email"] {
 ::-webkit-scrollbar-thumb {
   background-color: #666565;
 }
-::-webkit-scrollbar-track {
-  background-color: #c0bdbd;
-}
 
 ::-webkit-scrollbar-thumb:active {
   background-color: #333; /* Change the color when clicked */
