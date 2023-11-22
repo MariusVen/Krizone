@@ -75,6 +75,7 @@
 
               // Disable the submit button
               document.getElementById("submitButton").disabled = true;
+              document.getElementById("submitButton").value = "Please wait";
 
               // Get the email address from the form
               var email = document.getElementById("email").value;
@@ -118,6 +119,7 @@
               setTimeout(function () {
                 document.body.removeChild(notification);
                 document.getElementById("submitButton").disabled = false;
+                document.getElementById("submitButton").value = "Unsubscribe";
               }, 3000);
             }
           </script>

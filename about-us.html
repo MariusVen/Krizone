@@ -104,6 +104,8 @@
 
                     // Disable the submit button
                     document.getElementById("submitButton").disabled = true;
+                    document.getElementById("submitButton").value =
+                      "Please wait";
 
                     // Get the email address from the form
                     var email = document.getElementById("email").value;
@@ -115,7 +117,10 @@
                       })
                       .then(
                         function (response) {
-                          console.log("Email sent successfully", response);
+                          console.log(
+                            "Subscribed successfully. Thank you!",
+                            response
+                          );
                           // Show success notification
                           showNotification(
                             "Email sent successfully",
@@ -127,7 +132,7 @@
                           console.log("Email failed to send", error);
                           // Show error notification
                           showNotification(
-                            "Email failed to send. Please try again later.",
+                            "Subscribtion failed. Please try again later.",
                             "error"
                           );
                         }
@@ -150,6 +155,7 @@
                   setTimeout(function () {
                     document.body.removeChild(notification);
                     document.getElementById("submitButton").disabled = false;
+                    document.getElementById("submitButton").value = "Subscribe";
                   }, 3000);
                 }
               </script>
