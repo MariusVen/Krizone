@@ -161,29 +161,7 @@ nav ul li a {
 .text-no-colums2 {
   background-color: transparent;
 }
-.article-text {
-  margin-top: 1.8%;
-}
-.article-text p {
-  text-align: left;
-  font-family: "GFS Didot", serif;
-  font-size: 16px;
-  text-align: justify;
-  line-height: 1.5;
-}
-.article-text h1 {
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
-}
-.article-text h2 {
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-}
-.article-text span {
-  color: black;
-}
+
 .article-text img {
   width: 50%;
 }
